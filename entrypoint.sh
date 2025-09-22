@@ -34,8 +34,5 @@ else:
     print("Superuser already exists.")
 EOF
 
-# Start Tailwind in the background
-python manage.py tailwind start &
-
 # Start Django dev server
 exec python manage.py runserver 0.0.0.0:8000
